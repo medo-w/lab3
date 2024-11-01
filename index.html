@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            overflow: hidden;
+            background-color: #f2f2f2;
+        }
+        
+        .logo {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .logo img {
+            width: 200px;
+            height: auto;
+        }
+        
+        .picture-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 105vh;
+            margin-top: -50px;
+        }
+        
+        .picture {
+            text-align: center;
+            margin: 0 80px;
+            position: relative;
+            perspective: 1000px;
+            transform: rotate(-10deg);
+        }
+        
+        .book-title {
+            font-display: bold;
+            margin-top: 20px;
+            color: #6e0d0d;
+        }
+        
+        img {
+            width: 300px;
+            height: 450px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        img:hover {
+            transform: scale(1.1) rotate(10deg);
+        }
+        
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        .edition {
+            font-size: 60px;
+            margin-top: 10px;
+            color: #f8f6f6;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="image1.png" alt="Logo">
+    </div>
+    
+    <div class="picture-container">
+        <div class="picture">
+            <a href="hobbies.html">
+                <img src="hoppy.webp" alt="Hoppy">
+                <h2 class="book-title">HOBBY</h2>
+            </a>
+        </div>
+    
+        <div class="picture">
+            <a href="biodata.html">
+                <img src="Biodata.jpg" alt="Biodata">
+                <h2 class="book-title">BIODATA</h2>
+            </a>
+        </div>
+    
+        <div class="picture">
+            <a href="campuslife.html">
+                <img src="Campuslife.jpg" alt="Campus Life">
+                <h2 class="book-title">CAMPUS LIFE</h2>
+            </a>
+        </div>
+    </div>
+    
+    <img class="background-image" src="Background.jpg" alt="Background Image">
+</body>
+</html>

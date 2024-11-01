@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Information</title>
+    <style>
+        body {
+            font-weight: Arial, sans-serif;
+            background-color: #690202;
+            margin: 0;
+            padding: 0;
+        }
+        .logo {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .logo img {
+            max-width: 150px; /* You can adjust the max-width to your desired size */
+            height: auto; /* Maintain the aspect ratio */
+        }
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .go-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 9999;
+        }
+        .go-home a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #690202;
+            color: #8f7575;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .Campuslife {
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column; /* Display items vertically */
+            align-items: center; /* Center items horizontally */
+        }
+        .Campuslife {
+            margin: 20px;
+            padding: 50px; /* Add padding for spacing and style */
+            background-color: #07273d; /* Set a background color for the template */
+            border-radius: 10px; /* Apply rounded edges */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+            color: #ecb745; /* Text color */
+            transition: transform 0.3s ease-in-out; /* Add hover effect */
+        }
+        .Campuslife:hover {
+            transform: scale(1.1); /* Increase size on hover */
+        }
+        .Campuslife img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .video-container {
+            text-align: center;
+        }
+        .video-container video {
+            max-width: 150px;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #3498db; /* Add a border */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="go-home">
+        <a href="index.html">Go Home</a>
+    </div>
+    <div class="logo">
+        <img class="logo1" src="image1.png" alt="Logo">
+    </div>
+    <img class="background-image" src="Background.jpg" alt="Background Image">
+    
+    <!-- Add five circular images in distinct positions -->
+    <div class="Campus">
+        <div class="Campuslife">
+            <img src="attendance.jpeg" alt="Attending Lectures">
+            <h2>Attending Lectures</h2>
+            <h2>Attending lectures is a vital part of my university life. I believe in active participation in class, staying attentive, and taking detailed notes. Engaging in discussions, asking questions, and collaborating with fellow students enhances my understanding of the course material. I find that being present both physically and mentally in lectures is the key to academic success.</h2>
+        </div>
+        <div class="Campuslife">
+            <img src="event.jpeg" alt="University Celebrations">
+            <h2>University Celebrations</h2>
+            <h2>I thoroughly enjoy being part of the vibrant university community and actively participate in various events and celebrations. These gatherings provide an excellent opportunity to connect with my peers, create lasting memories, and truly immerse myself in the university spirit. Whether it's cultural festivals, sports competitions, or academic gatherings, I relish the chance to celebrate and bond with my fellow students.</h2>
+        </div>
+        <div class="Campuslife">
+            <img src="study.jpeg" alt="Studying in the Library">
+            <h2>Studying in the Library</h2>
+            <h2>The university library is my sanctuary for focused learning and academic growth. It offers a quiet and productive environment for me to study my lessons, conduct research, and delve into the world of knowledge. With an abundance of resources at my disposal, I utilize the library as a hub of information and a valuable resource for achieving academic excellence. It's where I can fully concentrate on my studies.</h2>
+        </div>
+        <div class="Campuslife">
+            <div class="video-container">
+                <video width="150" controls>
+                    <source src="view.mp4" type="video/mp4">
+                </video>
+                <h2>Going for a Walk</h2>
+                <h2>One of my favorite activities is going for a walk after the rain in my university to witness the breathtaking beauty of the natural world. There's something enchanting about the glistening raindrops on leaves, the fresh scent in the air, and the serene ambiance that follows a rain shower. These walks allow me to clear my mind, find inspiration for my writing, and connect with the beauty of the world around me. It's a simple yet deeply rewarding experience that brings me joy and serenity.</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

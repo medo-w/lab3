@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Information</title>
+    <style>
+        body {
+            font-weight: Arial, sans-serif;
+            background-color: #690202;
+            margin: 0;
+            padding: 0;
+        }
+        .logo {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .logo img {
+            max-width: 150px; /* You can adjust the max-width to your desired size */
+            height: auto; /* Maintain the aspect ratio */
+        }
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .go-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 9999;
+        }
+        .go-home a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #690202;
+            color: #8f7575;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .hobbies {
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .hobby {
+            text-align: center;
+            margin: 20px;
+            padding: 20px; /* Add padding for spacing and style */
+            background-color: #3498db; /* Set a background color for the template */
+            border-radius: 10px; /* Apply rounded edges */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+            color: #ffffff; /* Text color */
+            animation: move 2s infinite alternate; /* Add animation */
+        }
+        .hobby img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(20px); /* Adjust the distance and direction of movement */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="go-home">
+        <a href="index.html">Go Home</a>
+    </div>
+    <div class="logo">
+        <img src="image1.png" alt="Logo">
+    </div>
+    <img class="background-image" src="Background.jpg" alt="Background Image">
+    
+    <!-- Add five circular images in distinct positions -->
+    <div class="hobbies">
+        <div class="hobby">
+            <img src="bycicle.jpg" alt="Bike">
+            <p>Biking</p>
+            <p>I Enjoy the thrill of cycling through scenic routes and exploring new places on my bicycle.</p>
+        </div>
+        <div class="hobby">
+            <img src="reading.jpg" alt="Reading">
+            <p>Reading</p>
+            <p>I Immerse myself in fascinating worlds and stories with the joy of reading books.</p>
+        </div>
+        <div class="hobby">
+            <img src="soccer.jpg" alt="Soccer">
+            <p>Soccer</p>
+            <p>I Feel the excitement of the beautiful game, scoring goals, and making incredible passes on the soccer field.</p>
+        </div>
+        <div class="hobby">
+            <img src="volleyball.jpeg" alt="Volleyball">
+            <p>Volleyball</p>
+            <p>Experience the fun of spiking and serving the ball in thrilling beach volleyball matches.</p>
+        </div>
+        <div class="hobby">
+            <img src="writting.jpeg" alt="Writing">
+            <p>Writing</p>
+            <p>Unlock my creativity and express my thoughts and ideas through the art of writing and storytelling.</p>
+        </div>
+    </div>
+</body>
+</html>
